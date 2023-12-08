@@ -1,8 +1,8 @@
 # app.py
 from flask import Flask
-from routes.main_routes import setup_routes
+from routes.route import setup_routes
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 setup_routes(app)
 
 if __name__ == '__main__':
