@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}About - Web Dev Showcase{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-6 offset-md-3">
+            <h1 class="text-center mb-4">About Me</h1>
+            <img src="{{ url_for('static', filename='portrait.JPG') }}" alt="Your Profile Picture" class="img-fluid rounded-circle mx-auto d-block mb-4" style="max-width: 200px;">
+
+
+            <p>Hello! I'm a senior at the University of Oklahoma, majoring in Computer Science. My journey in the world of technology has been an exciting one, with a primary focus on web development. Proficient in languages such as Python, SQL, JavaScript, C, and C#, I have had the opportunity to work on a variety of projects that have enhanced my skills.</p>
+
+            <p>My expertise extends to web technologies, including HTML and Javascript, allowing me to craft visually appealing and user-friendly interfaces. Throughout my academic career, I've engaged in diverse projects, sharpening my problem-solving abilities and fostering collaborative teamwork.</p>
+
+            <p>Driven by a passion for innovation, I am eager to take on new challenges and contribute to the ever-evolving field of technology. Feel free to explore my portfolio and connect with me if you have any questions or exciting opportunities!</p>
+
+            <div class="text-center mt-4 my-2">
+                <a href="mailto:gabrieldowen@gmail.com" class="btn btn-primary">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
